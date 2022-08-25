@@ -1,0 +1,77 @@
+{
+  "jsonrpc": "2.0",
+  "method": "sync_batch",
+  "id": "0",
+  "params": {
+    "sync_plan": {
+      "object": {
+        "object_api_name": "Todo",
+        "label": "Todo"
+      },
+      "operation": "insert",
+      "schema": {
+        "name": {
+          "active_identifier": true,
+          "field": {
+            "field_api_name": "Name",
+            "label": "Name",
+            "identifier": true,
+            "required": true,
+            "createable": true,
+            "updateable": true,
+            "type": "string",
+            "array": false
+          }
+        },
+        "deadline": {
+          "active_identifier": false,
+          "field": {
+            "field_api_name": "Deadline",
+            "label": "Deadline",
+            "identifier": false,
+            "required": false,
+            "createable": true,
+            "updateable": true,
+            "type": "string",
+            "array": false
+          }
+        },
+        "status": {
+          "active_identifier": false,
+          "field": {
+            "field_api_name": "Status",
+            "label": "Status",
+            "identifier": false,
+            "required": false,
+            "createable": true,
+            "updateable": true,
+            "type": "string",
+            "array": false
+          }
+        }
+      }
+    },
+    "records": [
+      {
+        "name": "task1",
+        "deadline": "2020-01-01",
+        "status": "completed"
+      },
+      {
+        "name": "task2",
+        "deadline": "2020-01-01",
+        "status": "inprogress"
+      },
+      {
+        "name": "task3",
+        "deadline": "2020-01-01",
+        "status": "pending"
+      },
+      {
+        "name": "task4",
+        "deadline": "2020-01-01",
+        "status": "completed"
+      }
+    ]
+  }
+}
