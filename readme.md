@@ -1,5 +1,7 @@
 # A Census custom destination to integrate with Airtable API
 
+This a sample implementation to Census custom API.
+
 ## Usage
 
 Start the server
@@ -14,6 +16,24 @@ cat sync.json |  http ':5000?base_id=appozac8Pr9CMZVz9&table_id=Todo&api_key=<AP
 ```
 
 ## Deployments
+
+We use [Zappa](https://github.com/zappa/Zappa) to deploy the app as an AWS lambda function.
+
+```sh
+pip install zappa
+
+# initial deployment
+zappa deploy dev
+
+# later
+zappa update dev
+
+# to view endpoint
+zappa status dev
+
+# to view the log
+zappa tail dev
+```
 
 ## Reference
 [Census custom destination](https://docs.getcensus.com/destinations/custom-api#rpc-details)

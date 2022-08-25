@@ -1,0 +1,10 @@
+{
+    "dev": {
+        "app_function": "server.app",
+        "aws_region": "us-west-2",
+        "profile_name": "default",
+        "project_name": "census-custom-d",
+        "runtime": "python3.8",
+        "s3_bucket": "zappa-pphbdo5mf"
+    }
+}

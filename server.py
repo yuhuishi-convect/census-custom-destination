@@ -1,7 +1,7 @@
 from flask import Flask, request, g
 
 from jsonrpc.backend.flask import api
-from methods import *
+from airtable_destination.methods import *
 
 
 app = Flask(__name__)
@@ -28,7 +28,7 @@ def echo(message):
     return {"message": message}
 
 
-api.dispatcher.add_method(test_connections)
+api.dispatcher.add_method(test_connection)
 api.dispatcher.add_method(list_objects)
 api.dispatcher.add_method(list_fields)
 api.dispatcher.add_method(get_sync_speed)

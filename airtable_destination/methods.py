@@ -18,7 +18,7 @@ def get_airtable_url():
 
 
 # methods to test if connection to airtable API is working
-def test_connections():
+def test_connection():
     """
     Methods to test if connection to airtable API is working
     Sample response
